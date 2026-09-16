@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="CardioAI - AI-based heart disease risk prediction and analysis system">
+
+    <title>CardioAI | Heart Disease Risk Assessment</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <nav class="navbar" aria-label="Main navigation">
+
+        <div class="logo">
+            <span aria-hidden="true">🫀</span>
+            CardioAI
+        </div>
+
+
+        <div class="nav-links">
+
+            <a href="#home">
+                Home
+            </a>
+
+            <a href="#assessment">
+                Assessment
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main>
+
+
+        <!-- =========================
+             HERO SECTION
+        ========================== -->
+
+        <section
+            id="home"
+            class="hero"
+            aria-labelledby="hero-title"
+        >
+
+            <div class="hero-content">
+
+
+                <div class="hero-text">
+
+                    <p class="badge">
+                        AI-POWERED HEALTH ANALYSIS
+                    </p>
+
+
+                    <h1 id="hero-title">
+
+                        Understand Your
+
+                        <span>
+                            Heart Health
+                        </span>
+
+                    </h1>
+
+
+                    <p class="hero-description">
+
+                        CardioAI analyzes selected health parameters
+                        using a machine learning model to estimate
+                        the presence of heart disease.
+
+                    </p>
+
+
+                    <a
+                        href="#assessment"
+                        class="hero-button"
+                    >
+
+                        Start Assessment
+
+                        <span aria-hidden="true">
+                            →
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+
+                <!-- Heart Card -->
+
+                <div
+                    class="heart-card"
+                    aria-hidden="true"
+                >
+
+                    <div class="heart-icon">
+                        🫀
+                    </div>
+
+
+                    <h3>
+                        CardioAI
+                    </h3>
+
+
+                    <p>
+                        Machine Learning Based
+                        Heart Disease Analysis
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             DISCLAIMER
+        ========================== -->
+
+        <section
+            class="disclaimer"
+            aria-labelledby="disclaimer-title"
+            role="note"
+        >
+
+            <div
+                class="disclaimer-icon"
+                aria-hidden="true"
+            >
+                ⚠️
+            </div>
+
+
+            <div>
+
+                <strong id="disclaimer-title">
+                    Important Disclaimer
+                </strong>
+
+
+                <p>
+
+                    CardioAI is an educational and research project.
+                    Its prediction is not a medical diagnosis and
+                    should not replace advice from a qualified
+                    healthcare professional.
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             ASSESSMENT SECTION
+        ========================== -->
+
+        <section
+            id="assessment"
+            class="assessment-section"
+            aria-labelledby="assessment-title"
+        >
+
+
+            <div class="section-heading">
+
+                <p class="section-label">
+                    PATIENT ASSESSMENT
+                </p>
+
+
+                <h2 id="assessment-title">
+                    Enter Patient Information
+                </h2>
+
+
+                <p id="assessment-guidance">
+
+                    Complete the required fields using the
+                    patient's available health information.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- =========================
+                 FORM
+            ========================== -->
+
+            <form
+                id="predictionForm"
+                aria-describedby="assessment-guidance"
+            >
+
+
+                <!-- =========================
+                     SECTION 01
+                ========================== -->
+
+                <fieldset class="form-card">
+
+
+                    <legend class="card-heading">
+
+                        <span
+                            class="card-number"
+                            aria-hidden="true"
+                        >
+                            01
+                        </span>
+
+
+                        <span>
+
+                            <span class="card-heading-title">
+                                Basic Information
+                            </span>
+
+
+                            <span class="card-heading-description">
+                                General patient information
+                            </span>
+
+                        </span>
+
+                    </legend>
+
+
+
+                    <div class="form-grid">
+
+
+                        <!-- AGE -->
+
+                        <div class="form-group">
+
+                            <label for="age">
+
+                                Age
+
+                                <span
+                                    class="required"
+                                    aria-hidden="true"
+                                >
+                                    *
+                                </span>
+
+                            </label>
+
+
+                            <input
+                                type="number"
+                                id="age"
+                                name="age"
+                                min="1"
+                                max="120"
+                                value="50"
+                                required
+                                aria-describedby="age-help"
+                            >
+
+
+                            <small id="age-help">
+
+                                Patient age in years.
+
+                            </small>
+
+                        </div>
+
+
+
+                        <!-- SEX -->
+
+                        <div class="form-group">
+
+                            <label for="sex">
+
+                                Sex
+
+                                <span
+                                    class="required"
+                                    aria-hidden="true"
+                                >
+                                    *
+                                </span>
+
+                            </label>
+
+
+                            <select
+                                id="sex"
+                                name="sex"
+                                required
+                                aria-describedby="sex-help"
+                            >
+
+                                <option value="0">
+                                    Female
+                                </option>
+
+                                <option value="1">
+                                    Male
+                                </option>
+
+                            </select>
+
+
+                            <small id="sex-help">
+
+                                Select the value expected by
+                                the trained model.
+
+                            </small>
+
+                        </div>
+
+
+
+                        <!-- CHEST PAIN -->
+
+                        <div class="form-group">
+
+                            <label for="chest_pain">
+
+                                Chest Pain Type
+
+                                <span
+                                    class="required"
+                                    aria-hidden="true"
+                                >
+                                    *
+                                </span>
+
+                            </label>
+
+
+                            <select
+                                id="chest_pain"
+                                name="chest_pain"
+                                required
+                                aria-describedby="chest-pain-help"
+                            >
+
+                                <option value="1">
+                                    Type 1
+                                </option>
+
+                                <option value="2">
+                                    Type 2
+                                </option>
+
+                                <option value="3">
+                                    Type 3
+                                </option>
+
+                                <option value="4">
+                                    Type 4
+                                </option>
+
+                            </select>
+
+
+                            <small id="chest-pain-help">
+
+                                Select the chest pain category
+                                recorded in the patient data.
+
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </fieldset>
+
+
+
+                <!-- =========================
+                     SECTION 02
+                ========================== -->
+
+                <fieldset class="form-card">
+
+
+                    <legend class="card-heading">
+
+                        <span
+                            class="card-number"
+                            aria-hidden="true"
+                        >
+                            02
+                        </span>
+
+
+                        <span>
+
+                            <span class="card-heading-title">
+                                Clinical Parameters
+                            </span>
+
+
+                            <span class="card-heading-description">
+                                Blood and cardiovascular measurements
+                            </span>
+
+                        </span>
+
+                    </legend>
+
+
+
+                    <div class="form-grid">
+
+
+                        <!-- BP -->
+
+                        <div class="form-group">
+
+                            <label for="bp">
+
+                                Blood Pressure
+
+                                <span
+                                    class="required"
+                                    aria-hidden="true"
+                                >
+                                    *
+                                </span>
+
+                            </label>
+
+
+                            <input
+                                type="number"
+                                id="bp"
+                                name="bp"
+                                min="50"
+                                max="250"
+                                value="120"
+                                required
+                                aria-describedby="bp-help"
+                            >
+
+
+                            <small id="bp-help">
+                                Enter the value in mmHg.
+                            </small>
+
+                        </div>
+
+
+
+                        <!-- CHOLESTEROL -->
+
+                        <div class="form-group">
+
+                            <label for="cholesterol">
+
+                                Cholesterol
+
+                                <span
+                                    class="required"
+                                    aria-hidden="true"
+                                >
+                                    *
+                                </span>
+
+                            </label>
+
+
+                            <input
+                                type="number"
+                                id="cholesterol"
+                                name="cholesterol"
+                                min="50"
+                                max="600"
+                                value="200"
+                                required
+                                aria-describedby="cholesterol-help"
+                            >
+
+
+                            <small id="cholesterol-help">
+                                Enter cholesterol in mg/dL.
+                            </small>
+
+                        </div>
+
+
+
+                        <!-- FBS -->
+
+                        <div class="form-group">
+
+                            <label for="fbs">
+
+                                Fasting Blood Sugar &gt; 120
+
+                                <span
+                                    class="required"
+                                    aria-hidden="true"
+                                >
+                                    *
+                                </span>
+
+                            </label>
+
+
+                            <select
+                                id="fbs"
+                                name="fbs"
+                                required
+                                aria-describedby="fbs-help"
+                            >
+
+                                <option value="0">
+                                    No
+                                </option>
+
+                                <option value="1">
+                                    Yes
+                                </option>
+
+                            </select>
+
+
+                            <small id="fbs-help">
+
+                                Select Yes when fasting blood sugar
+                                is greater than 120 mg/dL.
+
+                            </small>
+
+                        </div>
+
+
+
+                        <!-- EKG -->
+
+                        <div class="form-group">
+
+                            <label for="ekg">
+
+                                EKG Results
+
+                                <span
+                                    class="required"
+                                    aria-hidden="true"
+                                >
+                                    *
+                                </span>
+
+                            </label>
+
+
+                            <select
+                                id="ekg"
+                                name="ekg"
+                                required
+                                aria-describedby="ekg-help"
+                            >
+
+                                <option value="0">
+                                    0
+                                </option>
+
+                                <option value="1">
+                                    1
+                                </option>
+
+                                <option value="2">
+                                    2
+                                </option>
+
+                            </select>
+
+
+                            <small id="ekg-help">
+
+                                Select the EKG category
+                                recorded in the dataset.
+
+                            </small>
+
+                        </div>
+
+
+
+                        <!-- MAX HEART RATE -->
+
+                        <div class="form-group">
+
+                            <label for="max_hr">
+
+                                Maximum Heart Rate
+
+                                <span
+                                    class="required"
+                                    aria-hidden="true"
+                                >
+                                    *
+                                </span>
+
+                            </label>
+
+
+                            <input
+                                type="number"
+                                id="max_hr"
+                                name="max_hr"
+                                min="50"
+                                max="250"
+                                value="150"
+                                required
+                                aria-describedby="max-hr-help"
+                            >
+
+
+                            <small id="max-hr-help">
+
+                                Maximum recorded heart rate
+                                in BPM.
+
+                            </small>
+
+                        </div>
+
+
+
+                        <!-- EXERCISE ANGINA -->
+
+                        <div class="form-group">
+
+                            <label for="exercise_angina">
+
+                                Exercise-Induced Angina
+
+                                <span
+                                    class="required"
+                                    aria-hidden="true"
+                                >
+                                    *
+                                </span>
+
+                            </label>
+
+
+                            <select
+                                id="exercise_angina"
+                                name="exercise_angina"
+                                required
+                                aria-describedby="exercise-angina-help"
+                            >
+
+                                <option value="0">
+                                    No
+                                </option>
+
+                                <option value="1">
+                                    Yes
+                                </option>
+
+                            </select>
+
+
+                            <small id="exercise-angina-help">
+
+                                Select Yes if exercise-induced
+                                angina was recorded.
+
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </fieldset>
+
+
+
+                <!-- =========================
+                     SECTION 03
+                ========================== -->
+
+                <fieldset class="form-card">
+
+
+                    <legend class="card-heading">
+
+                        <span
+                            class="card-number"
+                            aria-hidden="true"
+                        >
+                            03
+                        </span>
+
+
+                        <span>
+
+                            <span class="card-heading-title">
+                                Advanced Parameters
+                            </span>
+
+
+                            <span class="card-heading-description">
+                                Additional cardiovascular indicators
+                            </span>
+
+                        </span>
+
+                    </legend>
+
+
+
+                    <div class="form-grid">
+
+
+                        <!-- ST DEPRESSION -->
+
+                        <div class="form-group">
+
+                            <label for="st_depression">
+
+                                ST Depression
+
+                                <span
+                                    class="required"
+                                    aria-hidden="true"
+                                >
+                                    *
+                                </span>
+
+                            </label>
+
+
+                            <input
+                                type="number"
+                                id="st_depression"
+                                name="st_depression"
+                                min="0"
+                                max="10"
+                                step="0.1"
+                                value="1.0"
+                                required
+                                aria-describedby="st-help"
+                            >
+
+
+                            <small id="st-help">
+
+                                Enter the recorded ST depression value.
+
+                            </small>
+
+                        </div>
+
+
+
+                        <!-- SLOPE -->
+
+                        <div class="form-group">
+
+                            <label for="slope">
+
+                                Slope of ST
+
+                                <span
+                                    class="required"
+                                    aria-hidden="true"
+                                >
+                                    *
+                                </span>
+
+                            </label>
+
+
+                            <select
+                                id="slope"
+                                name="slope"
+                                required
+                                aria-describedby="slope-help"
+                            >
+
+                                <option value="1">
+                                    1
+                                </option>
+
+                                <option value="2">
+                                    2
+                                </option>
+
+                                <option value="3">
+                                    3
+                                </option>
+
+                            </select>
+
+
+                            <small id="slope-help">
+
+                                Select the ST slope category
+                                used by the model.
+
+                            </small>
+
+                        </div>
+
+
+
+                        <!-- VESSELS -->
+
+                        <div class="form-group">
+
+                            <label for="vessels">
+
+                                Number of Major Vessels
+
+                                <span
+                                    class="required"
+                                    aria-hidden="true"
+                                >
+                                    *
+                                </span>
+
+                            </label>
+
+
+                            <select
+                                id="vessels"
+                                name="vessels"
+                                required
+                                aria-describedby="vessels-help"
+                            >
+
+                                <option value="0">0</option>
+
+                                <option value="1">1</option>
+
+                                <option value="2">2</option>
+
+                                <option value="3">3</option>
+
+                            </select>
+
+
+                            <small id="vessels-help">
+
+                                Select the number of major vessels
+                                recorded for the patient.
+
+                            </small>
+
+                        </div>
+
+
+
+                        <!-- THALLIUM -->
+
+                        <div class="form-group">
+
+                            <label for="thallium">
+
+                                Thallium
+
+                                <span
+                                    class="required"
+                                    aria-hidden="true"
+                                >
+                                    *
+                                </span>
+
+                            </label>
+
+
+                            <select
+                                id="thallium"
+                                name="thallium"
+                                required
+                                aria-describedby="thallium-help"
+                            >
+
+                                <option value="3">
+                                    3
+                                </option>
+
+                                <option value="6">
+                                    6
+                                </option>
+
+                                <option value="7">
+                                    7
+                                </option>
+
+                            </select>
+
+
+                            <small id="thallium-help">
+
+                                Select the Thallium category
+                                used by the model.
+
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </fieldset>
+
+
+
+                <!-- SCREEN READER STATUS -->
+
+                <div
+                    id="form-status"
+                    class="sr-only"
+                    aria-live="polite"
+                >
+                </div>
+
+
+
+                <!-- SUBMIT -->
+
+                <button
+                    type="submit"
+                    class="predict-button"
+                    id="predictButton"
+                >
+
+                    <span aria-hidden="true">
+                        🔍
+                    </span>
+
+                    Assess Heart Disease Risk
+
+                </button>
+
+
+                <p class="form-submit-help">
+
+                    Review all information before submitting.
+                    The result is generated by the CardioAI
+                    machine learning model.
+
+                </p>
+
+            </form>
+
+
+
+            <!-- =========================
+                 PREDICTION DASHBOARD
+            ========================== -->
+
+            <section
+                id="result"
+                class="result-dashboard hidden"
+                aria-labelledby="result-title"
+                aria-live="polite"
+                aria-atomic="true"
+            >
+
+
+                <!-- RESULT HEADER -->
+
+                <div class="result-header">
+
+                    <p class="section-label">
+                        CARDIOAI ASSESSMENT
+                    </p>
+
+
+                    <h2 id="result-title">
+                        Prediction Result
+                    </h2>
+
+
+                    <div
+                        id="result-icon"
+                        class="result-icon"
+                        aria-hidden="true"
+                    >
+                        🫀
+                    </div>
+
+
+                    <h3 id="prediction-text">
+                        --
+                    </h3>
+
+
+                    <p id="prediction-description">
+                        --
+                    </p>
+
+                </div>
+
+
+
+                <!-- PATIENT SUMMARY -->
+
+                <div class="patient-summary">
+
+                    <div class="summary-heading">
+
+                        <h3>
+                            Patient Summary
+                        </h3>
+
+
+                        <p>
+                            Information used for this assessment
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="summary-grid">
+
+
+                        <div class="summary-item">
+
+                            <span>
+                                Age
+                            </span>
+
+                            <strong id="summary-age">
+                                --
+                            </strong>
+
+                        </div>
+
+
+
+                        <div class="summary-item">
+
+                            <span>
+                                Sex
+                            </span>
+
+                            <strong id="summary-sex">
+                                --
+                            </strong>
+
+                        </div>
+
+
+
+                        <div class="summary-item">
+
+                            <span>
+                                Blood Pressure
+                            </span>
+
+                            <strong id="summary-bp">
+                                --
+                            </strong>
+
+                        </div>
+
+
+
+                        <div class="summary-item">
+
+                            <span>
+                                Cholesterol
+                            </span>
+
+                            <strong id="summary-cholesterol">
+                                --
+                            </strong>
+
+                        </div>
+
+
+
+                        <div class="summary-item">
+
+                            <span>
+                                Maximum Heart Rate
+                            </span>
+
+                            <strong id="summary-max-hr">
+                                --
+                            </strong>
+
+                        </div>
+
+
+
+                        <div class="summary-item">
+
+                            <span>
+                                Chest Pain
+                            </span>
+
+                            <strong id="summary-chest-pain">
+                                --
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- DISCLAIMER -->
+
+                <div class="result-disclaimer">
+
+                    <span aria-hidden="true">
+                        ⚠️
+                    </span>
+
+
+                    <p>
+
+                        This result is generated by a machine
+                        learning model for educational and
+                        research purposes. It is not a medical
+                        diagnosis and should not replace advice
+                        from a qualified healthcare professional.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- NEW ASSESSMENT -->
+
+                <button
+                    type="button"
+                    id="newAssessmentButton"
+                    class="new-assessment-button"
+                >
+
+                    <span aria-hidden="true">
+                        🔄
+                    </span>
+
+                    New Assessment
+
+                </button>
+
+            </section>
+
+        </section>
+
+
+
+        <!-- =========================
+             ABOUT SECTION
+        ========================== -->
+
+        <section
+            id="about"
+            class="about-section"
+            aria-labelledby="about-title"
+        >
+
+            <div class="section-heading">
+
+                <p class="section-label">
+                    ABOUT CARDIOAI
+                </p>
+
+
+                <h2 id="about-title">
+                    How It Works
+                </h2>
+
+            </div>
+
+
+
+            <div class="steps">
+
+
+                <article class="step">
+
+                    <div
+                        class="step-icon"
+                        aria-hidden="true"
+                    >
+                        01
+                    </div>
+
+
+                    <h3>
+                        Enter Data
+                    </h3>
+
+
+                    <p>
+                        Provide the required patient
+                        health parameters.
+                    </p>
+
+                </article>
+
+
+
+                <article class="step">
+
+                    <div
+                        class="step-icon"
+                        aria-hidden="true"
+                    >
+                        02
+                    </div>
+
+
+                    <h3>
+                        ML Analysis
+                    </h3>
+
+
+                    <p>
+                        The trained machine learning model
+                        analyzes the submitted information.
+                    </p>
+
+                </article>
+
+
+
+                <article class="step">
+
+                    <div
+                        class="step-icon"
+                        aria-hidden="true"
+                    >
+                        03
+                    </div>
+
+
+                    <h3>
+                        View Result
+                    </h3>
+
+
+                    <p>
+                        CardioAI displays the model's prediction.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <h3>
+
+            <span aria-hidden="true">
+                🫀
+            </span>
+
+            CardioAI
+
+        </h3>
+
+
+        <p>
+            AI-Based Heart Disease Risk Prediction
+            and Analysis System
+        </p>
+
+
+        <p class="footer-note">
+            Educational &amp; Research Project
+        </p>
+        <p>Contact: shaneaalamansari04@gmail.com</p>
+
+    </footer>
+
+
+
+    <script src="./javascript.js" defer></script>
+
+</body>
+
+</html>
