@@ -217,6 +217,8 @@ Example response:
 ## Screenshots
 
 I'll add screenshots of the application here once the final version is deployed.
+<img width="1900" height="991" alt="image" src="https://github.com/user-attachments/assets/aca25970-541d-403e-a092-77dcf5813d7c" />
+
 
 ---
 
