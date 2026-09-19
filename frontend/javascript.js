@@ -93,7 +93,7 @@ form.addEventListener("submit", async function (event) {
 
 
         const response = await fetch(
-            "http://127.0.0.1:8000/predict",
+            "https://cardioai-ai-based-heart-disease-risk.onrender.com/predict",
             {
                 method: "POST",
 
