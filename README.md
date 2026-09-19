@@ -220,6 +220,19 @@ I'll add screenshots of the application here once the final version is deployed.
 <img width="1900" height="991" alt="image" src="https://github.com/user-attachments/assets/aca25970-541d-403e-a092-77dcf5813d7c" />
 
 
+<img width="1901" height="982" alt="image" src="https://github.com/user-attachments/assets/d6a03374-6514-4534-a7d5-a40acd208658" />\
+
+
+<img width="1911" height="751" alt="image" src="https://github.com/user-attachments/assets/bbfdeee1-82b1-4514-9c46-e6ea206b1237" />
+
+
+<img width="1895" height="986" alt="image" src="https://github.com/user-attachments/assets/6806a5d8-d88f-4c48-9b68-6fa9eb1942f8" />
+
+
+
+<img width="1911" height="991" alt="image" src="https://github.com/user-attachments/assets/a86da4cb-8100-4d6b-8025-30575a3d6c6b" />
+
+
 ---
 
 ## What I want to improve
