@@ -216,11 +216,11 @@ Example response:
 
 ## Screenshots
 
-I'll add screenshots of the application here once the final version is deployed.
+
 <img width="1900" height="991" alt="image" src="https://github.com/user-attachments/assets/aca25970-541d-403e-a092-77dcf5813d7c" />
 
 
-<img width="1901" height="982" alt="image" src="https://github.com/user-attachments/assets/d6a03374-6514-4534-a7d5-a40acd208658" />\
+<img width="1901" height="982" alt="image" src="https://github.com/user-attachments/assets/d6a03374-6514-4534-a7d5-a40acd208658" />
 
 
 <img width="1911" height="751" alt="image" src="https://github.com/user-attachments/assets/bbfdeee1-82b1-4514-9c46-e6ea206b1237" />
