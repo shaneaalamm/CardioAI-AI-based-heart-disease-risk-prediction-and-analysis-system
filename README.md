@@ -96,11 +96,9 @@ CardioAI/
 │   ├── CardioAI.pkl
 │   └── main.py
 │
-├── frontend/
-│   ├── index.html
-│   ├── javascript.js
-│   └── style.css
-│
+├── index.html
+│── javascript.js
+│── style.css
 ├── CardioAI-Heart-Disease-Risk-Prediction.ipynb
 ├── Heart_Disease_Prediction.csv
 ├── app.py
