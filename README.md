@@ -20,7 +20,7 @@ https://cardioai-ai-based-heart-disease-risk.onrender.com/docs
 
 ---
 
-## 🚀 What It Does
+## What It Does
 
 * Accepts patient clinical information through a web interface
 * Preprocesses input data using the trained ML pipeline
@@ -31,7 +31,7 @@ https://cardioai-ai-based-heart-disease-risk.onrender.com/docs
 
 ---
 
-## 🧠 Machine Learning
+## Machine Learning
 
 The model was developed using a preprocessing and classification pipeline.
 
@@ -73,7 +73,7 @@ The final deployed model is a **Linear Support Vector Machine (SVM)** integrated
 
 ---
 
-## 🔄 How It Works
+## How It Works
 
 ```text
 User
@@ -95,7 +95,7 @@ Result Displayed on Website
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Machine Learning
 
@@ -129,30 +129,7 @@ Result Displayed on Website
 
 ---
 
-## 📁 Project Structure
-
-```text
-CardioAI/
-│
-├── backend/
-│   ├── CardioAI.pkl
-│   └── main.py
-│
-├── index.html
-├── javascript.js
-├── style.css
-│
-├── CardioAI-Heart-Disease-Risk-Prediction-and-Analysis-System.ipynb
-├── requirements.txt
-├── .gitignore
-├── .nojekyll
-├── LICENSE
-└── README.md
-```
-
----
-
-## 🔌 API
+## API
 
 ### `POST /predict`
 
@@ -212,7 +189,7 @@ The API accepts patient information and returns the model prediction.
 
 ---
 
-## 🔮 Future Improvements
+## Future Improvements
 
 * Add probability/confidence visualization
 * Improve model explainability
@@ -224,7 +201,7 @@ The API accepts patient information and returns the model prediction.
 
 ---
 
-## ⚠️ Limitations
+## Limitations
 
 * The project uses a limited dataset.
 * The model has not been clinically validated.
@@ -233,10 +210,8 @@ The API accepts patient information and returns the model prediction.
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 **Shane Aalam Ansari**
 
 B.Tech CSE Student
-
-Built as a machine learning and web development project to understand the process of taking an ML model from experimentation in a Jupyter Notebook to a deployed web application.
